@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #444;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #6a11cb;
+    margin-top: 2rem;
+}
+
+/* Servicios */
+#servicios li {
+    background-color: #e8f0fe;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-left: 6px solid #6a11cb;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+#servicios li:hover {
+    background-color: #d0e2ff;
+}
+
+/* Tabla */
+#planes table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+#planes caption {
+    caption-side: top;
+    font-weight: bold;
+    background-color: #ede7f6;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+#planes th {
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px;
+}
+
+#planes td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+#planes tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+#planes tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Formulario */
+#contacto form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+}
+
+fieldset {
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#contacto input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+    outline: none;
+}
+
+#contacto button {
+    margin-top: 20px;
+    background-color: #6a11cb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #5112a5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1c1c1c;
+    color: #eee;
+    margin-top: 3rem;
+}
