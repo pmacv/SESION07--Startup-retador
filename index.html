@@ -16,15 +16,34 @@
         <p>Impulsamos tu marca con diseño, innovación y tecnología</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#diferencia">DIFERENCIA</a></li>
+            <li><a href="#planes">PLANES</a></li>
+            <li><a href="#novedades">NOVEDADES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section id="servicios">
             <h2>Servicios</h2>
             <ul>
-                <li>Diseño Web Responsivo</li>
-                <li>Branding e Identidad Visual</li>
-                <li>Experiencia de Usuario (UX/UI)</li>
-                <li>Consultoría Creativa</li>
+                <li>🎨 Diseño Web Responsivo - Adaptamos tu presencia online a cualquier dispositivo.</li>
+                <li>🧠 Branding e Identidad Visual - Creamos marcas memorables.</li>
+                <li>📱 UX/UI - Mejoramos la experiencia y navegación de tus usuarios.</li>
+                <li>📊 Consultoría Creativa - Te guiamos con soluciones estratégicas.</li>
             </ul>
+        </section>
+
+        <section id="diferencias">
+            <h2>Lo que nos diferencia</h2>
+            <div class="contenedor-cards">
+                <div class="card">ENFOQUE CREATIVO ÚNICO</div>
+                <div class="card">RESPUESTA RÁPIDA Y SOPORTE</div>
+                <div class="card">DISEÑO ECOAMIGABLE</div>
+            </div>
         </section>
 
         <section id="planes">
@@ -58,16 +77,37 @@
             </table>
         </section>
 
+        <section id="novedades">
+            <h2>📰 Novedades</h2>
+            <article>
+                <h3>Lanzamos nuestro nuevo servicio de diseño UX</h3>
+                <p>Desde este mes, Creativa Studio ofrece asesoría personalizada en experiencia de usuario (UX) para
+                    empresas que buscan mejorar sus plataformas digitales.</p>
+                <img src="ui-ux-interview-questions------.jpeg" alt="Equipo Creativa trabajando"
+                    style="max-width: 100%; border-radius: 8px;">
+            </article>
+        </section>
+
         <section id="contacto">
             <h2>Contáctanos</h2>
             <form>
                 <fieldset>
                     <legend>📬 Envíanos un mensaje</legend>
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Tu nombre">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+
                     <button type="submit">Enviar mensaje</button>
+
                 </fieldset>
             </form>
         </section>
@@ -78,4 +118,5 @@
     </footer>
 
 </body>
+
 </html>

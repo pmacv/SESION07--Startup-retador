@@ -30,7 +30,49 @@ main {
 
 h2 {
     color: #6a11cb;
-    margin-top: 2rem;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+/* Navegador */
+nav {
+  background-color: #6a11cb;
+  width: 100%;
+  padding: 14px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: #2575fc;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 /* Servicios */
@@ -51,7 +93,8 @@ h2 {
 #planes table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: auto;
+    table-layout: fixed;
+    /* Fuerza que las columnas sean del mismo ancho proporcionalmente */
     margin-top: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
@@ -60,19 +103,26 @@ h2 {
     caption-side: top;
     font-weight: bold;
     background-color: #ede7f6;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
+    padding: 12px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
 #planes th {
     background-color: #6a11cb;
     color: white;
     padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 #planes td {
-    padding: 12px;
+    padding: 15px;
     border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.95rem;
 }
 
 #planes tr:nth-child(even) {
@@ -117,17 +167,37 @@ fieldset {
     margin-top: 20px;
     background-color: #6a11cb;
     color: white;
-    padding: 12px 25px;
+    padding: 14px 30px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
+
 #contacto button:hover {
-    background-color: #5112a5;
+    background-color: #1a53c5;
+    transform: scale(1.02);
 }
+
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+#contacto textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+    outline: none;
+}
+
 
 /* Footer */
 footer {
@@ -136,4 +206,47 @@ footer {
     background-color: #1c1c1c;
     color: #eee;
     margin-top: 3rem;
+    border-top: 4px solid #6a11cb; 
+}
+
+/* @media */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+/* animacion */
+.contenedor-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
